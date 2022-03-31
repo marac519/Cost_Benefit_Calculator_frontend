@@ -1,0 +1,29 @@
+html {
+    height: 100%;
+  }
+  body {
+    height: 100%;
+    width: 100%;
+  }
+#fő_container {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+}
+#container h3{
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+#input button {
+  margin-top: 30px;
+  width: 200px;
+  margin-left: 100px;
+}
+#input input {
+  width: 400px;
+}

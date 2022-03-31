@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="icon" href="/support (1).png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="home.css">
+
+</head>
+<body style="background-color: #071013;"><!--#071013 színt megváltoztatni a véglegesben-->
+    <div id="page-content-new-day-wrapper">
+        <div id="page-content-new-day">
+            <div id="new-day-header" style="display: flex; justify-content: center;">
+                <h1>Napi költség összesítő</h1>
+            </div>
+
+            <div class="new-day-loading">
+                <div class="loader"></div>
+            </div>
+
+            <div class="oldalso_navigalo_bar">
+                
+                <div class="egy_navigalo_elem">
+                    <img src="/assets/worker.png">
+                </div>
+
+                <div class="egy_navigalo_elem">
+                    <img src="/assets/excavator.png">
+                </div>
+
+                <div class="egy_navigalo_elem">
+                    <img src="/assets/truck (1).png">
+                </div>
+
+                <div class="egy_navigalo_elem">
+                    <img src="/assets/toilet-paper.png">
+                </div>
+
+                <div class="egy_navigalo_elem">
+                    <img src="/assets/contract.png">
+                </div>
+
+                <div class="egy_navigalo_elem">
+                    <img src="/assets/concrete-mixer (1).png">
+                </div>
+
+                <div class="egy_navigalo_elem">
+                    <img src="/assets/paving.png">
+                </div>
+
+                <div class="egy_navigalo_elem">
+                    <img src="/assets/soil.png">
+                </div>
+
+                <div class="egy_navigalo_elem">
+                    <img src="/assets/road-with-broken-line.png">
+                </div>
+
+                <div class="egy_navigalo_elem">
+                    <img src="/assets/border.png">
+                </div>
+
+                <div class="egy_navigalo_elem">
+                    <img src="/assets/street-light.png">
+                </div>
+
+                <div class="egy_navigalo_elem">
+                    <img src="/assets/bench.png">
+                </div>
+
+                <div class="egy_navigalo_elem">
+                    <img src="/assets/sewer.png">
+                </div>
+
+                <div class="egy_navigalo_elem">
+                    <img src="/assets/plumbing.png">
+                </div>
+
+                <div class="egy_navigalo_elem">
+                    <img src="/assets/pipeline.png">
+                </div>
+
+                <div class="egy_navigalo_elem">
+                    <img src="/assets/gardening.png">
+                </div>
+
+                <div class="egy_navigalo_elem">
+                    <img src="/assets/stones.png">
+                </div>
+
+                <!-- szerintem nem kellenek ide a képek vagy a szöveg mert nem fér ki a 17 elem -->
+
+            </div>
+
+            <div id="new-day-form">
+
+                <div class="new-day-form-wrapper">
+                    <div id="new-day-form-date-inputs" style="display: flex; justify-content: center; align-items: center;padding-left: 80px; margin-top: 40px; padding-bottom: 15px">
+                        <div id="" style="display: flex; flex-direction: column;">
+                            <h6>Munkaszám</h6>
+                            <select id="munkaszám" style="margin-right: 200px; min-width: 130px;">
+                                <option value=""></option>
+                            </select>
+                        </div>
+
+                        <div id="" style="display: flex; flex-direction: column;">
+                            <h6>Év</h6>
+                            <select id="év" style="margin-right: 75px; min-width: 80px;">
+                                <option value=""></option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                                <option value="2028">2028</option>
+                                <option value="2029">2029</option>
+                            </select>
+                        </div>
+
+                        <div id="" style="display: flex; flex-direction: column;">
+                            <h6>Hónap</h6>
+                            <select id="hónap" style="margin-right: 75px; min-width: 120px;">
+                                <option value=""></option>
+                                <option value="Január">Január</option>
+                                <option value="Február">Február</option>
+                                <option value="Március">Március</option>
+                                <option value="Április">Április</option>
+                                <option value="Május">Május</option>
+                                <option value="Június">Június</option>
+                                <option value="Július">Július</option>
+                                <option value="Augusztus">Augusztus</option>
+                                <option value="Szeptember">Szeptember</option>
+                                <option value="Október">Október</option>
+                                <option value="November">November</option>
+                                <option value="December">December</option>
+                            </select>
+                        </div>
+
+                        <div id="" style="margin-right: 50px; display: flex;flex-direction: column;">
+                            <h6>Nap</h6>
+                            <select id="nap" style="margin-right: 75px; min-width: 60px;">
+                                <option value=""></option>
+                                <option value="01">1</option>
+                                <option value="02">2</option>
+                                <option value="03">3</option>
+                                <option value="04">4</option>
+                                <option value="05">5</option>
+                                <option value="06">6</option>
+                                <option value="07">7</option>
+                                <option value="08">8</option>
+                                <option value="09">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select>
+                        </div>
+
+                        <div id="new-day-form-alap_adatok"></div>
+
+                    </div>
+
+                    <div style="padding-bottom: 35px">
+                        <h6 style="padding-left: 45%;"
+                        >Hagyd üresen ha a mai dátumot szeretnéd!</h6>
+                    </div>
+                    <div class="rounded"></div>
+                </div>
+
+                <div class="new-day-form-wrapper">
+                    <div style="display:flex; flex-direction: row;">
+                        <h3>Munkaerő</h3>
+                        <a id="munkaerő_plus_gomb" class="new_day_hozzaad_gomb" style="text-decoration: none;">
+                            <div id="new-day-plus-gomb">
+                                <p style="font-size: 40px; color: #198754; margin-top: 8px; margin-left: 1px;">+</p>
+                            </div>
+                        </a>
+                        <a id="munkaerő_minus_gomb" class="new_day_torles_gomb" style="text-decoration: none;">
+                            <div id="new-day-plus-gomb">
+                                <p style="font-size: 40px; color: #198754; margin-top: 8px; margin-left: 0px;">-</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div id="new-day-form-munkaerő-inputs" style="display: flex; justify-content: flex-start; align-items: flex-start;padding-left: 80px; margin-top: 40px;">
+                        <div id="munkaerő_cég_container" style="display: flex; flex-direction: column;">
+                            <h6>Cég</h6>
+                            <select id="munkaerő_cég" style="margin-right: 75px;">
+                                <option value=""> </option>
+                            </select>
+                        </div>
+
+                        <div id="munkaerő_tevékenység_container" style="display: flex; flex-direction: column;">
+                            <h6>Tevékenység</h6>
+                            <select id="munkaerő_tevékenység" style="margin-right: 75px;">
+                                <option value=""> </option>
+                            </select>
+                        </div>
+
+                        <div id="munkaerő_egység_óra_container" style="display: flex; flex-direction: column;">
+                            <h6>Egység(óra)</h6>
+                            <input id="munkaerő_egység_óra" style="margin-right: 75px; max-width: 80px !important;">
+                                <!-- <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option> -->
+                                </input>
+                        </div>
+
+                        <div id="munkaerő_létszám_container" style="margin-right: 50px; display: flex;flex-direction: column;">
+                            <h6>Létszám</h6>
+                            <input id="munkaerő_létszám">
+                        </div>
+
+                        <div id="new-day-form-munkaerő-emberek"></div>
+
+                    </div>
+                    <div id="összesen-wrapper-munkaerő" style="display: flex; flex-direction: row; justify-content: flex-start; margin-top: 30px;">
+                        <div class="összesen-szöveg">
+                            <h4>Összesen:</h4>
+                        </div>
+                        <div id="összesen-szám-munkaerő" style="color: #C5EBC3;">
+                            
+                        </div>
+                    </div>
+                    <div class="rounded"></div>
+
+                </div>
+
+                <div class="new-day-form-wrapper">
+                    <div style="display:flex; flex-direction: row;">
+                    <h3>Munkagépek</h3>
+                        <a id="munkagepek_plus_gomb" class="new_day_hozzaad_gomb" style="text-decoration: none;">
+                            <div id="new-day-plus-gomb">
+                                <p style="font-size: 40px; color: #198754; margin-top: 8px; margin-left: 1px;">+</p>
+                            </div>
+                        </a>
+                        <a id="munkagepek_minus_gomb" class="new_day_torles_gomb" style="text-decoration: none;">
+                            <div id="new-day-plus-gomb">
+                                <p style="font-size: 40px; color: #198754; margin-top: 8px; margin-left: 0px;">-</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="new-day-form-munkagépek-inputs" style="display: flex; justify-content: space-between; align-items: flex-start;margin-left: 80px; margin-top: 40px;">
+
+                        
+                        
+                        <div id="munkagepek_típus_container" style="margin-right: 75px; display: flex; flex-direction: column;">
+                            <h6>Gép típusa</h6>
+                            <select id="munkagepek_típus">
+                                <option value=""> </option>
+                            </select>
+                        </div>
+
+                        <div id="munkagepek_rendszám_container"  style="margin-right: 75px; display: flex; flex-direction: column;">
+                            <h6>Rendszám</h6>
+                            <select id="munkagepek_rendszám">
+                                <option value=""> </option>
+                            </select>
+                        </div>
+
+                        <div id="munkagepek_cég_container" style="margin-right: 75px; display: flex; flex-direction: column;">
+                            <h6>Cég</h6>
+                            <select id="munkagepek_cég">
+                                <option value=""> </option>
+                            </select>
+                        </div>
+
+                        <div id="munkagépek_óradíj_container" style="margin-right: 75px; display: flex; flex-direction: column;">
+                            <h6>Óradíj / Napidíj</h6>
+                            <input id="munkagépek_óradíj">
+                        </div>
+
+                        <div id="munkagépek_órák_container">
+                            <h6>Órák száma</h6>
+                            <input id="munkagépek_órák_száma" style="margin-right: 75px; max-width: 80px !important; display: flex; flex-direction: row;">
+                                <!-- <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option> -->
+                                </input>
+                        </div>
+
+                        <div id="new-day-form-munkagépek">
+
+                    </div>
+                    
+                    </div>
+                    <div id="összesen-wrapper-munkagép" style="display: flex; flex-direction: row; justify-content: flex-end; margin-top: 30px; margin-left: 80px;">
+                        <div class="összesen-szöveg">
+                            <h4>Összesen:</h4>
+                        </div>
+                        <div id="összesen-szám-munkagépek" style="color: #C5EBC3;">
+                            
+                        </div>
+                    </div>
+                    <div class="rounded"></div>
+                </div>
+
+                <div class="new-day-form-wrapper">
+                    <div style="display:flex; flex-direction: row;">
+                    <h3>Teherautók</h3>
+                    <a id="teherautók_plus_gomb" class="new_day_hozzaad_gomb" style="text-decoration: none;">
+                        <div id="new-day-plus-gomb">
+                            <p style="font-size: 40px; color: #198754; margin-top: 8px; margin-left: 1px;">+</p>
+                        </div>
+                    </a>
+                    <a id="teherautók_minus_gomb" class="new_day_torles_gomb" style="text-decoration: none;">
+                        <div id="new-day-plus-gomb">
+                            <p style="font-size: 40px; color: #198754; margin-top: 8px; margin-left: 0px;">-</p>
+                        </div>
+                    </a>
+                    </div>
+
+                    <div id="new-day-form-teherautók-inputs" style="display: flex; justify-content: space-between; align-items: flex-start;margin-left: 80px; margin-top: 40px;">
+                        
+                    
+                        <div id="teherautók_típus_container">
+                            <h6>TGK típusa</h6>
+                            <select id="teherautók_típus" style="margin-right: 75px; display: flex; flex-direction: row;">
+                                <option value=""> </option>
+                            </select>
+                        </div>
+
+                        <div id="teherautók_rendszám_container">
+                            <h6>Rendszám</h6>
+                            <select id="teherautók_rendszám" style="margin-right: 75px; display: flex; flex-direction: row;">
+                                <option value=""> </option>
+                            </select>
+                        </div>
+                        
+                        <div id="teherautók_cég_container">
+                            <h6>Cég</h6>
+                            <select id="teherautók_cég" style="margin-right: 75px; display: flex; flex-direction: row;">
+                                <option value=""> </option>
+                            </select>
+                        </div>
+
+                        <div id="teherautók_óradíj_container">
+                            <h6>Óradíj / Napidíj</h6>
+                            <input id="teherautók_óradíj" style="margin-right: 75px; display: flex; flex-direction: column;">
+                        </div>
+
+                        <div id="teherautók_órák_száma_container" style="margin-right: 50px; display: flex; flex-direction: column;">
+                            <h6>Órák száma</h6>
+                            <input id="teherautók_órák_száma" style="margin-right: 0px; max-width: 80px !important;">
+                                <!-- <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option> -->
+                                </input>
+                        </div>
+
+                        <div id="new-day-form-teherautók"></div>
+
+                    </div>
+                    <div id="összesen-wrapper-teherautók" style="display: flex; flex-direction: row; justify-content: flex-end; margin-top: 30px;margin-left: 80px;">
+                        <div class="összesen-szöveg">
+                            <h4>Összesen:</h4>
+                        </div>
+                        <div id="összesen-szám-teherautók" style="color: #C5EBC3;">
+                            
+                        </div>
+                    </div>
+                    <div class="rounded"></div>
+                </div>
+
+                <div class="new-day-form-wrapper">
+                    <div style="display:flex; flex-direction: row;">
+                    <h3>Kis Szolgáltatók</h3>
+                    <a id="kis-szolgaltatok_plus_gomb" class="new_day_hozzaad_gomb" style="text-decoration: none;">
+                        <div id="new-day-plus-gomb">
+                            <p style="font-size: 40px; color: #198754; margin-top: 8px; margin-left: 1px;">+</p>
+                        </div>
+                    </a>
+                    <a id="kis-szolgaltatok_minus_gomb" class="new_day_torles_gomb" style="text-decoration: none;">
+                        <div id="new-day-plus-gomb">
+                            <p style="font-size: 40px; color: #198754; margin-top: 8px; margin-left: 0px;">-</p>
+                        </div>
+                    </a>
+                    </div>
+
+                    <div id="new-day-form-kis-szolgaltatok-inputs" style="display: flex; justify-content: start; align-items: flex-start;margin-left: 80px; margin-top: 40px;">
+                        
+                    
+                        <div id="kis-szolgaltatok_cég_container" style="display: flex; flex-direction: column;">
+                            <h6>Cég</h6>
+                            <select id="kis-szolgaltatok_cég" style="margin-right: 75px;">
+                                <option value=""> </option>
+                            </select>
+                        </div>
+
+                        <div id="kis-szolgaltatok_tevékenység_container" style="display: flex; flex-direction: column;">
+                            <h6>Tevékenység</h6>
+                            <select id="kis-szolgaltatok_tevékenység" style="margin-right: 75px;">
+                                <option value=""> </option>
+                            </select>
+                        </div>
+
+                        <div id="kis-szolgaltatok_óradíj_container">
+                            <h6>Óradíj / Napidíj</h6>
+                            <input id="kis-szolgaltatok_óradíj" style="margin-right: 75px; display: flex; flex-direction: column;">
+                        </div>
+
+                        <div id="kis-szolgaltatok_órák_száma_container" style="margin-right: 50px; display: flex; flex-direction: column;">
+                            <h6>Órák száma</h6>
+                            <input id="kis-szolgaltatok_órák_száma" style="margin-right: 0px; max-width: 80px !important;">
+                                <!-- <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option> -->
+                                </input>
+                        </div>
+
+                        <div id="new-day-form-kis-szolgaltatok"></div>
+
+                    </div>
+                    <div id="összesen-wrapper-kis-szolgaltatok" style="display: flex; flex-direction: row; justify-content: flex-end; margin-top: 30px;margin-left: 80px;">
+                        <div class="összesen-szöveg">
+                            <h4>Összesen:</h4>
+                        </div>
+                        <div id="összesen-szám-kis-szolgaltatok" style="color: #C5EBC3;">
+                            
+                        </div>
+                    </div>
+                    <div class="rounded"></div>
+                </div>
+
+                <div class="new-day-form-wrapper">
+                    <div style="display:flex; flex-direction: row;">
+                    <h3>Nagy Szolgáltatók (Alvállalkozói keretszerződések)</h3>
+                    <a id="nagy_szolgaltatok_plus_gomb" class="new_day_hozzaad_gomb" style="text-decoration: none;">
+                        <div id="new-day-plus-gomb">
+                            <p style="font-size: 40px; color: #198754; margin-top: 8px; margin-left: 1px;">+</p>
+                        </div>
+                    </a>
+                    <a id="nagy_szolgaltatok_minus_gomb" class="new_day_torles_gomb" style="text-decoration: none;">
+                        <div id="new-day-plus-gomb">
+                            <p style="font-size: 40px; color: #198754; margin-top: 8px; margin-left: 0px;">-</p>
+                        </div>
+                    </a>
+                    </div>
+
+                    <div id="new-day-form-nagy_szolgaltatok-inputs" style="display: flex; justify-content: start; align-items: flex-start;margin-left: 80px; margin-top: 40px;">
+                        
+                    
+                        <div id="nagy_szolgaltatok_cég_container" style="display: flex; flex-direction: column;">
+                            <h6>Cég</h6>
+                            <select id="nagy_szolgaltatok_cég" style="margin-right: 75px;">
+                                <option value=""> </option>
+                            </select>
+                        </div>
+
+                        <div id="nagy_szolgaltatok_tevékenység_container" style="display: flex; flex-direction: column;">
+                            <h6>Tevékenység</h6>
+                            <select id="nagy_szolgaltatok_tevékenység" style="margin-right: 75px;">
+                                <option value=""> </option>
+                            </select>
+                        </div>
+
+                        <div id="nagy_szolgaltatok_mértékegység_container" style="display: flex; flex-direction: column;">
+                            <h6>Mértékegység</h6>
+                            <select id="nagy_szolgaltatok_mértékegység" style="margin-right: 75px;">
+                                <option value=""></option>
+                            </select>
+                        </div>
+
+                        <div id="nagy_szolgaltatok_óradíj_container">
+                            <h6>Ár</h6>
+                            <input id="nagy_szolgaltatok_óradíj" style="margin-right: 75px; display: flex; flex-direction: column;">
+                        </div>
+
+                        <div id="nagy_szolgaltatok_órák_száma_container" style="margin-right: 50px; display: flex; flex-direction: column;">
+                            <h6>Mennyiség</h6>
+                            <input id="nagy_szolgaltatok_órák_száma" style="margin-right: 0px;"></input>
+                        </div>
+
+                        <div id="new-day-form-nagy_szolgaltatok"></div>
+
+                    </div>
+                    <div id="összesen-wrapper-nagy_szolgaltatok" style="display: flex; flex-direction: row; justify-content: flex-end; margin-top: 30px;margin-left: 80px;">
+                        <div class="összesen-szöveg">
+                            <h4>Összesen:</h4>
+                        </div>
+                        <div id="összesen-szám-nagy_szolgaltatok" style="color: #C5EBC3;">
+                            
+                        </div>
+                    </div>
+                    <div class="rounded"></div>
+                </div>
+
+                <div class="new-day-form-wrapper" style="">
+                    <div style="display:flex; flex-direction: row;">
+                    <h3>Beton</h3>
+                    <a id="beton_plus_gomb" class="new_day_hozzaad_gomb" style="text-decoration: none;">
+                        <div id="new-day-plus-gomb">
+                            <p style="font-size: 40px; color: #198754; margin-top: 8px; margin-left: 1px;">+</p>
+                        </div>
+                    </a>
+                    <a id="beton_minus_gomb" class="new_day_torles_gomb" style="text-decoration: none;">
+                        <div id="new-day-plus-gomb">
+                            <p style="font-size: 40px; color: #198754; margin-top: 8px; margin-left: 0px;">-</p>
+                        </div>
+                    </a>
+                    </div>
+
+                    <div id="new-day-form-beton-inputs" style="display: flex; justify-content: flex-start; align-items: flex-start;margin-left: 80px; margin-top: 40px;">
+                        
+                        <div id="beton-gyártó_container">
+                            <h6>Gyártó</h6>
+                            <select id="beton-gyártó" style="margin-right: 75px; display: flex; flex-direction: row;">
+                                <option value=""> </option>
+                            </select>
+                        </div>
+                        
+                        <div id="beton_típus_container">
+                            <h6>Típus</h6>
+                            <select id="beton_típus" style="margin-right: 75px; display: flex; flex-direction: row;">
+                                <option value=""> </option>
+                            </select>
+                        </div>
+
+                        <div id="beton_ár_container"  style="margin-right: 75px; display: flex; flex-direction: column;">
+                            <h6>Ár</h6>
+                            <input id="beton_ár">
+                        </div>
+
+                        <div id="beton_mennyiség_container" style="margin-right: 50px; display: flex; flex-direction: column;">
+                            <h6>Mennyiség (m3)</h6>
+                            <input id="beton_mennyiség" style="margin-right: 0px;">
+                        </div>
+
+                        <div id="new-day-form-beton">
+
+                    </div>
+                    </div>
+                    <div id="összesen-wrapper-beton" style="display: flex; flex-direction: row; justify-content: flex-start; margin-top: 30px; margin-left: 80px;">
+                        <div class="összesen-szöveg">
+                            <h4>Összesen:</h4>
+                        </div>
+                        <div id="összesen-szám-beton" style="color: #C5EBC3;">
+                            
+                        </div>
+                    </div>
+                    <div class="rounded"></div>
+                </div>
+
+                <div class="new-day-form-wrapper" style="">
+                    <div style="display:flex; flex-direction: row;">
+                    <h3>Térkő</h3>
+                    <a id="terko_plus_gomb" class="new_day_hozzaad_gomb" style="text-decoration: none;">
+                        <div id="new-day-plus-gomb">
+                            <p style="font-size: 40px; color: #198754; margin-top: 8px; margin-left: 1px;">+</p>
+                        </div>
+                    </a>
+                    <a id="terko_minus_gomb" class="new_day_torles_gomb" style="text-decoration: none;">
+                        <div id="new-day-plus-gomb">
+                            <p style="font-size: 40px; color: #198754; margin-top: 8px; margin-left: 0px;">-</p>
+                        </div>
+                    </a>
+                    </div>
+
+                    <div id="new-day-form-terko-inputs" style="display: flex; justify-content: flex-start; align-items: flex-start;margin-left: 80px; margin-top: 40px;">
+                        
+                        <div id="terko-gyártó_container">
+                            <h6>Gyártó</h6>
+                            <select id="terko-gyártó" style="margin-right: 75px; display: flex; flex-direction: row;">
+                                <option value=""> </option>
+                            </select>
+                        </div>
+                        
+                        <div id="terko_típus_container">
+                            <h6>Típus</h6>
+                            <select id="terko_típus" style="margin-right: 75px; display: flex; flex-direction: row;">
+                                <option value=""> </option>
+                            </select>
+                        </div>
+
+                        <div id="terko_ár_container"  style="margin-right: 75px; display: flex; flex-direction: column;">
+                            <h6>Ár</h6>
+                            <input id="terko_ár">
+                        </div>
+
+                        <div id="terko_mennyiség_container" style="margin-right: 50px; display: flex; flex-direction: column;">
+                            <h6>Mennyiség (db / m2)</h6>
+                            <input id="terko_mennyiség" style="margin-right: 0px;">
+                        </div>
+
+                        <div id="new-day-form-terko">
+
+                    </div>
+                    </div>
+                    <div id="összesen-wrapper-terko" style="display: flex; flex-direction: row; justify-content: flex-start; margin-top: 30px; margin-left: 80px;">
+                        <div class="összesen-szöveg">
+                            <h4>Összesen:</h4>
+                        </div>
+                        <div id="összesen-szám-terko" style="color: #C5EBC3;">
+                            
+                        </div>
+                    </div>
+                    <div class="rounded"></div>
+                </div>
+
+                <div class="new-day-form-wrapper" style="">
+                    <div style="display:flex; flex-direction: row;">
+                    <h3>Szóródó Anyag</h3>
+                    <a id="szorodo_plus_gomb" class="new_day_hozzaad_gomb" style="text-decoration: none;">
+                        <div id="new-day-plus-gomb">
+                            <p style="font-size: 40px; color: #198754; margin-top: 8px; margin-left: 1px;">+</p>
+                        </div>
+                    </a>
+                    <a id="szorodo_minus_gomb" class="new_day_torles_gomb" style="text-decoration: none;">
+                        <div id="new-day-plus-gomb">
+                            <p style="font-size: 40px; color: #198754; margin-top: 8px; margin-left: 0px;">-</p>
+                        </div>
+                    </a>
+                    </div>
+
+                    <div id="new-day-form-szorodo-inputs" style="display: flex; justify-content: flex-start; align-items: flex-start;margin-left: 80px; margin-top: 40px;">
+                        
+                        <div id="szorodo-gyártó_container">
+                            <h6>Gyártó</h6>
+                            <select id="szorodo-gyártó" style="margin-right: 75px; display: flex; flex-direction: row;">
+                                <option value=""> </option>
+                            </select>
+                        </div>
+                        
+                        <div id="szorodo_típus_container">
+                            <h6>Típus</h6>
+                            <select id="szorodo_típus" style="margin-right: 75px; display: flex; flex-direction: row;">
+                                <option value=""> </option>
+                            </select>
+                        </div>
+
+                        <div id="szorodo_ár_container"  style="margin-right: 75px; display: flex; flex-direction: column;">
+                            <h6>Ár</h6>
+                            <input id="szorodo_ár">
+                        </div>
+
+                        <div id="szorodo_mennyiség_container" style="margin-right: 50px; display: flex; flex-direction: column;">
+                            <h6>Mennyiség (m2 / to / mázsa)</h6>
+                            <input id="szorodo_mennyiség" style="margin-right: 0px;">
+                        </div>
+
+                        <div id="new-day-form-szorodo">
+
+                    </div>
+                    </div>
+                    <div id="összesen-wrapper-szorodo" style="display: flex; flex-direction: row; justify-content: flex-start; margin-top: 30px; margin-left: 80px;">
+                        <div class="összesen-szöveg">
+                            <h4>Összesen:</h4>
+                        </div>
+                        <div id="összesen-szám-szorodo" style="color: #C5EBC3;">
+                            
+                        </div>
+                    </div>
+                    <div class="rounded"></div>
+                </div>
+
+                <div class="new-day-form-wrapper" style="">
+                    <div style="display:flex; flex-direction: row;">
+                    <h3>Aszfalt</h3>
+                    <a id="aszfalt_plus_gomb" class="new_day_hozzaad_gomb" style="text-decoration: none;">
+                        <div id="new-day-plus-gomb">
+                            <p style="font-size: 40px; color: #198754; margin-top: 8px; margin-left: 1px;">+</p>
+                        </div>
+                    </a>
+                    <a id="aszfalt_minus_gomb" class="new_day_torles_gomb" style="text-decoration: none;">
+                        <div id="new-day-plus-gomb">
+                            <p style="font-size: 40px; color: #198754; margin-top: 8px; margin-left: 0px;">-</p>
+                        </div>
+                    </a>
+                    </div>
+
+                    <div id="new-day-form-aszfalt-inputs" style="display: flex; justify-content: flex-start; align-items: flex-start;margin-left: 80px; margin-top: 40px;">
+                        
+                        <div id="aszfalt-gyártó_container">
+                            <h6>Gyártó</h6>
+                            <select id="aszfalt-gyártó" style="margin-right: 75px; display: flex; flex-direction: row;">
+                                <option value=""> </option>
+                            </select>
+                        </div>
+                        
+                        <div id="aszfalt_típus_container">
+                            <h6>Típus</h6>
+                            <select id="aszfalt_típus" style="margin-right: 75px; display: flex; flex-direction: row;">
+                                <option value=""> </option>
+                            </select>
+                        </div>
+
+                        <div id="aszfalt_ár_container"  style="margin-right: 75px; display: flex; flex-direction: column;">
+                            <h6>Ár</h6>
+                            <input id="aszfalt_ár">
+                        </div>
+
+                        <div id="aszfalt_mennyiség_container" style="margin-right: 50px; display: flex; flex-direction: column;">
+                            <h6>Mennyiség (to)</h6>
+                            <input id="aszfalt_mennyiség" style="margin-right: 0px;">
+                        </div>
+
+                        <div id="new-day-form-aszfalt">
+
+                    </div>
+                    </div>
+                    <div id="összesen-wrapper-aszfalt" style="display: flex; flex-direction: row; justify-content: flex-start; margin-top: 30px; margin-left: 80px;">
+                        <div class="összesen-szöveg">
+                            <h4>Összesen:</h4>
+                        </div>
+                        <div id="összesen-szám-aszfalt" style="color: #C5EBC3;">
+                            
+                        </div>
+                    </div>
+                    <div class="rounded"></div>
+                </div>
+
+                <div class="new-day-form-wrapper" style="">
+                    <div style="display:flex; flex-direction: row;">
+                    <h3>Szegély</h3>
+                    <a id="szegely_plus_gomb" class="new_day_hozzaad_gomb" style="text-decoration: none;">
+                        <div id="new-day-plus-gomb">
+                            <p style="font-size: 40px; color: #198754; margin-top: 8px; margin-left: 1px;">+</p>
+                        </div>
+                    </a>
+                    <a id="szegely_minus_gomb" class="new_day_torles_gomb" style="text-decoration: none;">
+                        <div id="new-day-plus-gomb">
+                            <p style="font-size: 40px; color: #198754; margin-top: 8px; margin-left: 0px;">-</p>
+                        </div>
+                    </a>
+                    </div>
+
+                    <div id="new-day-form-szegely-inputs" style="display: flex; justify-content: flex-start; align-items: flex-start;margin-left: 80px; margin-top: 40px;">
+                        
+                        <div id="szegely-gyártó_container">
+                            <h6>Gyártó</h6>
+                            <select id="szegely-gyártó" style="margin-right: 75px; display: flex; flex-direction: row;">
+                                <option value=""> </option>
+                            </select>
+                        </div>
+                        
+                        <div id="szegely_típus_container">
+                            <h6>Típus</h6>
+                            <select id="szegely_típus" style="margin-right: 75px; display: flex; flex-direction: row;">
+                                <option value=""> </option>
+                            </select>
+                        </div>
+
+                        <div id="szegely_ár_container"  style="margin-right: 75px; display: flex; flex-direction: column;">
+                            <h6>Ár</h6>
+                            <input id="szegely_ár">
+                        </div>
+
+                        <div id="szegely_mennyiség_container" style="margin-right: 50px; display: flex; flex-direction: column;">
+                            <h6>Mennyiség (db)</h6>
+                            <input id="szegely_mennyiség" style="margin-right: 0px;">
+                        </div>
+
+                        <div id="new-day-form-szegely">
+
+                    </div>
+                    </div>
+                    <div id="összesen-wrapper-szegely" style="display: flex; flex-direction: row; justify-content: flex-start; margin-top: 30px; margin-left: 80px;">
+                        <div class="összesen-szöveg">
+                            <h4>Összesen:</h4>
+                        </div>
+                        <div id="összesen-szám-szegely" style="color: #C5EBC3;">
+                            
+                        </div>
+                    </div>
+                    <div class="rounded"></div>
+                </div>
+
+                <div class="new-day-form-wrapper" style="">
+                    <div style="display:flex; flex-direction: row;">
+                    <h3>Kandeláber</h3>
+                    <a id="kandelaber_plus_gomb" class="new_day_hozzaad_gomb" style="text-decoration: none;">
+                        <div id="new-day-plus-gomb">
+                            <p style="font-size: 40px; color: #198754; margin-top: 8px; margin-left: 1px;">+</p>
+                        </div>
+                    </a>
+                    <a id="kandelaber_minus_gomb" class="new_day_torles_gomb" style="text-decoration: none;">
+                        <div id="new-day-plus-gomb">
+                            <p style="font-size: 40px; color: #198754; margin-top: 8px; margin-left: 0px;">-</p>
+                        </div>
+                    </a>
+                    </div>
+
+                    <div id="new-day-form-kandelaber-inputs" style="display: flex; justify-content: flex-start; align-items: flex-start;margin-left: 80px; margin-top: 40px;">
+                        
+                        <div id="kandelaber-gyártó_container">
+                            <h6>Gyártó</h6>
+                            <select id="kandelaber-gyártó" style="margin-right: 75px; display: flex; flex-direction: row;">
+                                <option value=""> </option>
+                            </select>
+                        </div>
+                        
+                        <div id="kandelaber_típus_container">
+                            <h6>Típus</h6>
+                            <select id="kandelaber_típus" style="margin-right: 75px; display: flex; flex-direction: row;">
+                                <option value=""> </option>
+                            </select>
+                        </div>
+
+                        <div id="kandelaber_ár_container"  style="margin-right: 75px; display: flex; flex-direction: column;">
+                            <h6>Ár</h6>
+                            <input id="kandelaber_ár">
+                        </div>
+
+                        <div id="kandelaber_mennyiség_container" style="margin-right: 50px; display: flex; flex-direction: column;">
+                            <h6>Mennyiség (db / m)</h6>
+                            <input id="kandelaber_mennyiség" style="margin-right: 0px;">
+                        </div>
+
+                        <div id="new-day-form-kandelaber">
+
+                    </div>
+                    </div>
+                    <div id="összesen-wrapper-kandelaber" style="display: flex; flex-direction: row; justify-content: flex-start; margin-top: 30px; margin-left: 80px;">
+                        <div class="összesen-szöveg">
+                            <h4>Összesen:</h4>
+                        </div>
+                        <div id="összesen-szám-kandelaber" style="color: #C5EBC3;">
+                            
+                        </div>
+                    </div>
+                    <div class="rounded"></div>
+                </div>
+
+                <div class="new-day-form-wrapper" style="">
+                    <div style="display:flex; flex-direction: row;">
+                    <h3>Utcabútor</h3>
+                    <a id="utcabutor_plus_gomb" class="new_day_hozzaad_gomb" style="text-decoration: none;">
+                        <div id="new-day-plus-gomb">
+                            <p style="font-size: 40px; color: #198754; margin-top: 8px; margin-left: 1px;">+</p>
+                        </div>
+                    </a>
+                    <a id="utcabutor_minus_gomb" class="new_day_torles_gomb" style="text-decoration: none;">
+                        <div id="new-day-plus-gomb">
+                            <p style="font-size: 40px; color: #198754; margin-top: 8px; margin-left: 0px;">-</p>
+                        </div>
+                    </a>
+                    </div>
+
+                    <div id="new-day-form-utcabutor-inputs" style="display: flex; justify-content: flex-start; align-items: flex-start;margin-left: 80px; margin-top: 40px;">
+                        
+                        <div id="utcabutor-gyártó_container">
+                            <h6>Gyártó</h6>
+                            <select id="utcabutor-gyártó" style="margin-right: 75px; display: flex; flex-direction: row;">
+                                <option value=""> </option>
+                            </select>
+                        </div>
+                        
+                        <div id="utcabutor_típus_container">
+                            <h6>Típus</h6>
+                            <select id="utcabutor_típus" style="margin-right: 75px; display: flex; flex-direction: row;">
+                                <option value=""> </option>
+                            </select>
+                        </div>
+
+                        <div id="utcabutor_ár_container"  style="margin-right: 75px; display: flex; flex-direction: column;">
+                            <h6>Ár</h6>
+                            <input id="utcabutor_ár">
+                        </div>
+
+                        <div id="utcabutor_mennyiség_container" style="margin-right: 50px; display: flex; flex-direction: column;">
+                            <h6>Mennyiség (db / m)</h6>
+                            <input id="utcabutor_mennyiség" style="margin-right: 0px;">
+                        </div>
+
+                        <div id="new-day-form-utcabutor">
+
+                    </div>
+                    </div>
+                    <div id="összesen-wrapper-utcabutor" style="display: flex; flex-direction: row; justify-content: flex-start; margin-top: 30px; margin-left: 80px;">
+                        <div class="összesen-szöveg">
+                            <h4>Összesen:</h4>
+                        </div>
+                        <div id="összesen-szám-utcabutor" style="color: #C5EBC3;">
+                            
+                        </div>
+                    </div>
+                    <div class="rounded"></div>
+                </div>
+
+                <div class="new-day-form-wrapper" style="">
+                    <div style="display:flex; flex-direction: row;">
+                    <h3>Beton Elemek</h3>
+                    <a id="beton_akna_plus_gomb" class="new_day_hozzaad_gomb" style="text-decoration: none;">
+                        <div id="new-day-plus-gomb">
+                            <p style="font-size: 40px; color: #198754; margin-top: 8px; margin-left: 1px;">+</p>
+                        </div>
+                    </a>
+                    <a id="beton_akna_minus_gomb" class="new_day_torles_gomb" style="text-decoration: none;">
+                        <div id="new-day-plus-gomb">
+                            <p style="font-size: 40px; color: #198754; margin-top: 8px; margin-left: 0px;">-</p>
+                        </div>
+                    </a>
+                    </div>
+
+                    <div id="new-day-form-beton_akna-inputs" style="display: flex; justify-content: flex-start; align-items: flex-start;margin-left: 80px; margin-top: 40px;">
+                        
+                        <div id="beton_akna-gyártó_container">
+                            <h6>Gyártó</h6>
+                            <select id="beton_akna-gyártó" style="margin-right: 75px; display: flex; flex-direction: row;">
+                                <option value=""> </option>
+                            </select>
+                        </div>
+                        
+                        <div id="beton_akna_típus_container">
+                            <h6>Típus</h6>
+                            <select id="beton_akna_típus" style="margin-right: 75px; display: flex; flex-direction: row;">
+                                <option value=""> </option>
+                            </select>
+                        </div>
+
+                        <div id="beton_akna_ár_container"  style="margin-right: 75px; display: flex; flex-direction: column;">
+                            <h6>Ár</h6>
+                            <input id="beton_akna_ár">
+                        </div>
+
+                        <div id="beton_akna_mennyiség_container" style="margin-right: 50px; display: flex; flex-direction: column;">
+                            <h6>Mennyiség (db / m)</h6>
+                            <input id="beton_akna_mennyiség" style="margin-right: 0px;">
+                        </div>
+
+                        <div id="new-day-form-beton_akna">
+
+                    </div>
+                    </div>
+                    <div id="összesen-wrapper-beton_akna" style="display: flex; flex-direction: row; justify-content: flex-start; margin-top: 30px; margin-left: 80px;">
+                        <div class="összesen-szöveg">
+                            <h4>Összesen:</h4>
+                        </div>
+                        <div id="összesen-szám-beton_akna" style="color: #C5EBC3;">
+                            
+                        </div>
+                    </div>
+                    <div class="rounded"></div>
+                </div>
+
+                <div class="new-day-form-wrapper" style="">
+                    <div style="display:flex; flex-direction: row;">
+                    <h3>Csatorna Cső</h3>
+                    <a id="csatorna_cso_plus_gomb" class="new_day_hozzaad_gomb" style="text-decoration: none;">
+                        <div id="new-day-plus-gomb">
+                            <p style="font-size: 40px; color: #198754; margin-top: 8px; margin-left: 1px;">+</p>
+                        </div>
+                    </a>
+                    <a id="csatorna_cso_minus_gomb" class="new_day_torles_gomb" style="text-decoration: none;">
+                        <div id="new-day-plus-gomb">
+                            <p style="font-size: 40px; color: #198754; margin-top: 8px; margin-left: 0px;">-</p>
+                        </div>
+                    </a>
+                    </div>
+
+                    <div id="new-day-form-csatorna_cso-inputs" style="display: flex; justify-content: flex-start; align-items: flex-start;margin-left: 80px; margin-top: 40px;">
+                        
+                        <div id="csatorna_cso-gyártó_container">
+                            <h6>Gyártó</h6>
+                            <select id="csatorna_cso-gyártó" style="margin-right: 75px; display: flex; flex-direction: row;">
+                                <option value=""> </option>
+                            </select>
+                        </div>
+                        
+                        <div id="csatorna_cso_típus_container">
+                            <h6>Típus</h6>
+                            <select id="csatorna_cso_típus" style="margin-right: 75px; display: flex; flex-direction: row;">
+                                <option value=""> </option>
+                            </select>
+                        </div>
+
+                        <div id="csatorna_cso_ár_container"  style="margin-right: 75px; display: flex; flex-direction: column;">
+                            <h6>Ár</h6>
+                            <input id="csatorna_cso_ár">
+                        </div>
+
+                        <div id="csatorna_cso_mennyiség_container" style="margin-right: 50px; display: flex; flex-direction: column;">
+                            <h6>Mennyiség (db / m)</h6>
+                            <input id="csatorna_cso_mennyiség" style="margin-right: 0px;">
+                        </div>
+
+                        <div id="new-day-form-csatorna_cso">
+
+                    </div>
+                    </div>
+                    <div id="összesen-wrapper-csatorna_cso" style="display: flex; flex-direction: row; justify-content: flex-start; margin-top: 30px; margin-left: 80px;">
+                        <div class="összesen-szöveg">
+                            <h4>Összesen:</h4>
+                        </div>
+                        <div id="összesen-szám-csatorna_cso" style="color: #C5EBC3;">
+                            
+                        </div>
+                    </div>
+                    <div class="rounded"></div>
+                </div>
+
+                <div class="new-day-form-wrapper" style="">
+                    <div style="display:flex; flex-direction: row;">
+                    <h3>Nyomó Cső</h3>
+                    <a id="nyomo_cso_plus_gomb" class="new_day_hozzaad_gomb" style="text-decoration: none;">
+                        <div id="new-day-plus-gomb">
+                            <p style="font-size: 40px; color: #198754; margin-top: 8px; margin-left: 1px;">+</p>
+                        </div>
+                    </a>
+                    <a id="nyomo_cso_minus_gomb" class="new_day_torles_gomb" style="text-decoration: none;">
+                        <div id="new-day-plus-gomb">
+                            <p style="font-size: 40px; color: #198754; margin-top: 8px; margin-left: 0px;">-</p>
+                        </div>
+                    </a>
+                    </div>
+
+                    <div id="new-day-form-nyomo_cso-inputs" style="display: flex; justify-content: flex-start; align-items: flex-start;margin-left: 80px; margin-top: 40px;">
+                        
+                        <div id="nyomo_cso-gyártó_container">
+                            <h6>Gyártó</h6>
+                            <select id="nyomo_cso-gyártó" style="margin-right: 75px; display: flex; flex-direction: row;">
+                                <option value=""> </option>
+                            </select>
+                        </div>
+                        
+                        <div id="nyomo_cso_típus_container">
+                            <h6>Típus</h6>
+                            <select id="nyomo_cso_típus" style="margin-right: 75px; display: flex; flex-direction: row;">
+                                <option value=""> </option>
+                            </select>
+                        </div>
+
+                        <div id="nyomo_cso_ár_container"  style="margin-right: 75px; display: flex; flex-direction: column;">
+                            <h6>Ár</h6>
+                            <input id="nyomo_cso_ár">
+                        </div>
+
+                        <div id="nyomo_cso_mennyiség_container" style="margin-right: 50px; display: flex; flex-direction: column;">
+                            <h6>Mennyiség (db / m)</h6>
+                            <input id="nyomo_cso_mennyiség" style="margin-right: 0px;">
+                        </div>
+
+                        <div id="new-day-form-nyomo_cso">
+
+                    </div>
+                    </div>
+                    <div id="összesen-wrapper-nyomo_cso" style="display: flex; flex-direction: row; justify-content: flex-start; margin-top: 30px; margin-left: 80px;">
+                        <div class="összesen-szöveg">
+                            <h4>Összesen:</h4>
+                        </div>
+                        <div id="összesen-szám-nyomo_cso" style="color: #C5EBC3;">
+                            
+                        </div>
+                    </div>
+                    <div class="rounded"></div>
+                </div>
+
+                <div class="new-day-form-wrapper" style="">
+                    <div style="display:flex; flex-direction: row;">
+                    <h3>Kertészet</h3>
+                    <a id="kerteszet_plus_gomb" class="new_day_hozzaad_gomb" style="text-decoration: none;">
+                        <div id="new-day-plus-gomb">
+                            <p style="font-size: 40px; color: #198754; margin-top: 8px; margin-left: 1px;">+</p>
+                        </div>
+                    </a>
+                    <a id="kerteszet_minus_gomb" class="new_day_torles_gomb" style="text-decoration: none;">
+                        <div id="new-day-plus-gomb">
+                            <p style="font-size: 40px; color: #198754; margin-top: 8px; margin-left: 0px;">-</p>
+                        </div>
+                    </a>
+                    </div>
+
+                    <div id="new-day-form-kerteszet-inputs" style="display: flex; justify-content: flex-start; align-items: flex-start;margin-left: 80px; margin-top: 40px;">
+                        
+                        <div id="kerteszet-gyártó_container">
+                            <h6>Gyártó</h6>
+                            <select id="kerteszet-gyártó" style="margin-right: 75px; display: flex; flex-direction: row;">
+                                <option value=""> </option>
+                            </select>
+                        </div>
+                        
+                        <div id="kerteszet_típus_container">
+                            <h6>Típus</h6>
+                            <select id="kerteszet_típus" style="margin-right: 75px; display: flex; flex-direction: row;">
+                                <option value=""> </option>
+                            </select>
+                        </div>
+
+                        <div id="kerteszet_ár_container"  style="margin-right: 75px; display: flex; flex-direction: column;">
+                            <h6>Ár</h6>
+                            <input id="kerteszet_ár">
+                        </div>
+
+                        <div id="kerteszet_mennyiség_container" style="margin-right: 50px; display: flex; flex-direction: column;">
+                            <h6>Mennyiség (db / m)</h6>
+                            <input id="kerteszet_mennyiség" style="margin-right: 0px;">
+                        </div>
+
+                        <div id="new-day-form-kerteszet">
+
+                    </div>
+                    </div>
+                    <div id="összesen-wrapper-kerteszet" style="display: flex; flex-direction: row; justify-content: flex-start; margin-top: 30px; margin-left: 80px;">
+                        <div class="összesen-szöveg">
+                            <h4>Összesen:</h4>
+                        </div>
+                        <div id="összesen-szám-kerteszet" style="color: #C5EBC3;">
+                            
+                        </div>
+                    </div>
+                    <div class="rounded"></div>
+                </div>
+
+                <div class="new-day-form-wrapper" style="">
+                    <div style="display:flex; flex-direction: row;">
+                    <h3>Természetes Kő</h3>
+                    <a id="termeszetes_ko_plus_gomb" class="new_day_hozzaad_gomb" style="text-decoration: none;">
+                        <div id="new-day-plus-gomb">
+                            <p style="font-size: 40px; color: #198754; margin-top: 8px; margin-left: 1px;">+</p>
+                        </div>
+                    </a>
+                    <a id="termeszetes_ko_minus_gomb" class="new_day_torles_gomb" style="text-decoration: none;">
+                        <div id="new-day-plus-gomb">
+                            <p style="font-size: 40px; color: #198754; margin-top: 8px; margin-left: 0px;">-</p>
+                        </div>
+                    </a>
+                    </div>
+
+                    <div id="new-day-form-termeszetes_ko-inputs" style="display: flex; justify-content: flex-start; align-items: flex-start;margin-left: 80px; margin-top: 40px;">
+                        
+                        <div id="termeszetes_ko-gyártó_container">
+                            <h6>Gyártó</h6>
+                            <select id="termeszetes_ko-gyártó" style="margin-right: 75px; display: flex; flex-direction: row;">
+                                <option value=""> </option>
+                            </select>
+                        </div>
+                        
+                        <div id="termeszetes_ko_típus_container">
+                            <h6>Típus</h6>
+                            <select id="termeszetes_ko_típus" style="margin-right: 75px; display: flex; flex-direction: row;">
+                                <option value=""> </option>
+                            </select>
+                        </div>
+
+                        <div id="termeszetes_ko_ár_container"  style="margin-right: 75px; display: flex; flex-direction: column;">
+                            <h6>Ár</h6>
+                            <input id="termeszetes_ko_ár">
+                        </div>
+
+                        <div id="termeszetes_ko_mennyiség_container" style="margin-right: 50px; display: flex; flex-direction: column;">
+                            <h6>Mennyiség (m3 / to / mázsa)</h6>
+                            <input id="termeszetes_ko_mennyiség" style="margin-right: 0px;">
+                        </div>
+
+                        <div id="new-day-form-termeszetes_ko">
+
+                    </div>
+                    </div>
+                    <div id="összesen-wrapper-termeszetes_ko" style="display: flex; flex-direction: row; justify-content: flex-start; margin-top: 30px; margin-left: 80px;">
+                        <div class="összesen-szöveg">
+                            <h4>Összesen:</h4>
+                        </div>
+                        <div id="összesen-szám-termeszetes_ko" style="color: #C5EBC3;">
+                            
+                        </div>
+                    </div>
+                    <div class="rounded"></div>
+                </div>
+
+                
+
+            </div>
+
+            <div id="összesen-összesen" style="display: flex; align-items: center; justify-content: center; padding-bottom: 50px; padding-top: 100px;">
+                <h4 style="color: rgba(255, 255, 255, 0.836);" id="vegosszeg">Mindösszesen: </h4>
+            </div>
+            
+            <div id="adatok_mentése_wrapper" style="display: flex; flex-direction: column-reverse; align-items: center; padding-top: 0px; padding-bottom: 100px;">
+                <button id="mentés_gomb" class="mentés_gomb" style="width: 200px;">Adatok Mentése</button>
+                <div id="alvallalkozoi_error"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="home.js"></script>
+</body>
+</html>

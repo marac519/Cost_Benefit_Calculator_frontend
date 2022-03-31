@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="icon" href="/support (1).png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="home.css">
+
+</head>
+
+<style>
+
+    body {
+        overflow: hidden; 
+    }
+    
+    #napi-munkák-lista {
+        overflow-y: auto;
+        height: 75vh;
+    }
+    </style>
+
+<body style="background-color: black;">
+    <div class="fo-container">
+        <div class="nav-container">
+        <div class="nav-in-container">
+        <nav class="nav nav-pills nav-fill">
+            <a class="nav-link" aria-current="page" href="/screens/home.html">Főoldal</a>
+            <a class="nav-link active" href="">Összesítők</a>
+            <a class="nav-link" href="/screens/adatbázis.html">Adatbázis</a>
+        </nav>
+        </div>
+        </div>
+        <div id="page-content-összesítő">
+
+            <div id="összesítő-header">
+            <a href="new-day.html">
+                <div id="összesítő-header-gomb" class="plus-gomb">
+                    <p style="font-size: 50px; color: cornsilk; margin-top: 5px; margin-left: 2px;">+</p>
+                </div>
+            </a>
+            </div>
+
+            <div id="napi-munkák-lista-wrapper">
+            <div id="napi-munkák-lista">
+                <div class="loader" id="összesítő-loader" style="position: absolute; top: 100%; left: 50%; margin-left: -25px;"></div>
+
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="home.js"></script>
+</body> 
+
+</html>
