@@ -5,7 +5,7 @@ It assists entrepreneurs in preparing a bid and provides support in harmonizing 
 The product was built using:
 - postgresql
 - python (psycopg2, flask librarys)
-- html,css,javascript
+- html, css, vanilla javascript
 
 
 <h4 style="color: red">* The app is already in use in business, so I couldn't upload the backend stuff of this application due to security reasons.</h4>
