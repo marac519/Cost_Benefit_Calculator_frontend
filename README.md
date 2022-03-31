@@ -7,7 +7,8 @@ The product was built using:
 - python (psycopg2, flask librarys)
 - html,css,javascript
 
-* The app is already in use in business, so I couldn't upload the backend stuff of this application due to security reasons.
+
+<h4 style="color: red">* The app is already in use in business, so I couldn't upload the backend stuff of this application due to security reasons.</h4>
 
 # Daily Costs
 ![1648741190142](https://user-images.githubusercontent.com/88187833/161097515-0b44c6fa-800b-4a9e-8d33-45f73dd69196.png)
